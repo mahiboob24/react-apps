@@ -1,0 +1,26 @@
+/* src/Marquee.css */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee 8s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes marquee {
+  25% {
+      transform: translateX(5%);
+    }
+    
+    100% {
+      transform: translateX(-5%);
+    }
+  }
+.marquee-content img {
+  margin-top: 8px;
+  /* margin-right: 20px; Adjust spacing between images as needed */
+}
+
+
